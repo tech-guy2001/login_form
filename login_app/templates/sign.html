@@ -36,7 +36,7 @@ function validateForm() {
 </script>
 </head>
 <body>
-  <div class="container">
+  <div class="reg">
     <form   onsubmit="return validateForm()" name="reg" action="reg" method="post" >
         {% csrf_token %}
         <label>FIRST NAME</label>
@@ -53,6 +53,7 @@ function validateForm() {
 
     </form>
   </div>
+  <div class="login">
     <form action="log" method="post">
         {% csrf_token %}
         <label>FIRST NAME</label>
@@ -64,6 +65,7 @@ function validateForm() {
         <input type="submit" value="sgin in">
 
     </form>
+  </div>
     {{name}}
 </body>
 </html>
